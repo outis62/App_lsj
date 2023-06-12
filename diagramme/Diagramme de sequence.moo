@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{7DB44D1E-3CF8-4526-9608-1B505A6D7037}" Label="" LastModificationDate="1686494629" Name="Diagramme de sequence" Objects="23" Symbols="22" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{7DB44D1E-3CF8-4526-9608-1B505A6D7037}" Label="" LastModificationDate="1686551660" Name="Diagramme de sequence" Objects="23" Symbols="22" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -2010,7 +2010,7 @@ DISPNAME 0 Arial,8,N</a:FontList>
 <a:Code>Java</a:Code>
 <a:CreationDate>1686492505</a:CreationDate>
 <a:Creator>user</a:Creator>
-<a:ModificationDate>1686494629</a:ModificationDate>
+<a:ModificationDate>1686551660</a:ModificationDate>
 <a:Modifier>user</a:Modifier>
 <a:TargetModelURL>file:///%_OBJLANG%/java5-j2ee14.xol</a:TargetModelURL>
 <a:TargetModelID>0DEDDB90-46E2-45A0-886E-411709DA0DC9</a:TargetModelID>
