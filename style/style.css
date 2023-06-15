@@ -1,0 +1,138 @@
+html
+{
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+body {
+    background-image: url("https://c.pxhere.com/images/60/b3/f599f64eeb5f3478024dd23de305-1575601.jpg!d");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.7; */
+}
+
+body .logo {
+    justify-content: space-around;
+}
+
+body .logosuivi {
+    margin-left: -80px !important;
+}
+
+body .logolsj {
+    margin-left: 190px !important;
+}
+
+.nomapp {
+    margin-top: 150px !important;
+}
+
+.parent {
+    padding: 15px 50px 15px 50px !important;
+    margin-left: 130px !important;
+}
+
+.role{
+    position: relative;
+    color: blue;
+    font-size: 4em
+}
+.role:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 15em;
+    white-space: nowrap;
+    color: #fff;
+    animation: loading 5s linear;
+}
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}
+
+/* transform */
+
+
+.paernt {
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.e,
+.c,
+.m,
+.e-1 {
+    background-color: #3F51B5;
+    padding: 20px 0;
+}
+
+.w,
+.l,
+.o,
+.u {
+    background-color: #1BE7FF;
+    z-index: 3;
+}
+
+.paernt span {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    animation-name: welcome;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@keyframes welcome {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+        -webkit-transform: scale(2);
+        -moz-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+    }
+
+    80% {
+        transform: scale(2) rotate(360deg);
+        -webkit-transform: scale(2) rotate(360deg);
+        -moz-transform: scale(2) rotate(360deg);
+        -ms-transform: scale(2) rotate(360deg);
+        -o-transform: scale(2) rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+        -webkit-transform: rotate(0deg) scale(1);
+        -moz-transform: rotate(0deg) scale(1);
+        -ms-transform: rotate(0deg) scale(1);
+        -o-transform: rotate(0deg) scale(1);
+    }
+}
