@@ -8,7 +8,7 @@ html
 	padding: 0px;
 }
 body {
-    background-image: url("https://c.pxhere.com/images/60/b3/f599f64eeb5f3478024dd23de305-1575601.jpg!d");
+    background-image: url("https://c.pxhere.com/photos/26/01/pen_notebook_take_notes_the_work_book_work_photo_course-1401286.jpg!d");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,83 +56,5 @@ body .logolsj {
     }
 }
 
-/* transform */
 
 
-.paernt {
-    width: 300px;
-    height: 80px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.e,
-.c,
-.m,
-.e-1 {
-    background-color: #3F51B5;
-    padding: 20px 0;
-}
-
-.w,
-.l,
-.o,
-.u {
-    background-color: #1BE7FF;
-    z-index: 3;
-}
-
-.paernt span {
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    width: 60px;
-    height: 60px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    animation-name: welcome;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-@keyframes welcome {
-    0% {
-        transform: scale(1);
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-    }
-
-    50% {
-        transform: scale(2);
-        -webkit-transform: scale(2);
-        -moz-transform: scale(2);
-        -ms-transform: scale(2);
-        -o-transform: scale(2);
-    }
-
-    80% {
-        transform: scale(2) rotate(360deg);
-        -webkit-transform: scale(2) rotate(360deg);
-        -moz-transform: scale(2) rotate(360deg);
-        -ms-transform: scale(2) rotate(360deg);
-        -o-transform: scale(2) rotate(360deg);
-    }
-
-    100% {
-        transform: rotate(0deg) scale(1);
-        -webkit-transform: rotate(0deg) scale(1);
-        -moz-transform: rotate(0deg) scale(1);
-        -ms-transform: rotate(0deg) scale(1);
-        -o-transform: rotate(0deg) scale(1);
-    }
-}

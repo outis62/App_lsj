@@ -1,0 +1,91 @@
+html {
+    height: 100%;
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: #0DCAF0;
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 100%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #0DCAF0;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #060606;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: relative;
+    bottom: 70px;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #060606;
+    font-weight: bold;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  img{
+  width: 400px;
+  position: relative;
+  top: -40px;
+  right: 40px;
+  }
+  .butt{
+    background-color:black ;
+    color: azure;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 100px;
+  }
+  .inscription{
+    text-decoration: none;
+  }
+  button{
+    margin-left: 200px;
+  }
+  
+  
+  
+  
+
+  
+ 
