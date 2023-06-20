@@ -10,26 +10,25 @@
     <title>Inscription Admin LSJ</title>
 </head>
 <body>
-<div 
-   class="Z">
+<div class="Z">
     <h1>Inscription admin</h1>
-     <p> veuillez renseigner vos données</p>
+     <p>veuillez renseigner vos données</p>
 
      <form method="post">
          <div class="A">
-           <label>Nom </label class="A1">
+           <label>Nom </label>
              <input type="text" name="nom" required><br>
          </div>
         <div class="B">
-           <label>Prénom(s) </label class="B1">
+           <label>Prénom(s) </label>
              <input type="text" name="prenom" required><br>
         </div>
         <div class="C">
-            <label>Email </label class="C1">
+            <label>Email </label>
               <input type="email" name="email" required><br>
         </div>
         <div class="D">
-            <label>Mot de passe </label class="D1">
+            <label>Mot de passe </label>
               <input type="password" name="motpasse" required><br>
         </div>
 
@@ -50,7 +49,7 @@ class User {
         $this->db = new Database();
     }
 
-    public function register($nom, $prenom, $email, $motpasse) {
+    public function enregistrement($nom, $prenom, $email, $motpasse) {
         // Crypter le mot de passe
         $motpassecrypte = password_hash($motpasse, PASSWORD_DEFAULT);
 
@@ -79,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $motpasse = $_POST['motpasse'];
 
-    if ($user->register($nom, $prenom, $email, $motpasse)) {
+    if ($user->enregistrement($nom, $prenom, $email, $motpasse)) {
         echo "Inscription réussie";
     } else {
         echo "Erreur lors de l'inscription";
