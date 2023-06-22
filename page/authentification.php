@@ -13,24 +13,24 @@
     <div class="login-box">
         <img src="../image/imgauthent.jpg" alt="">
         <h2>S'authentifier</h2>
-        <form method="POST" action="">
+        <form method="POST">
             <div class="user-box">
                 <input type="email" name="email" required>
                 <label>Email</label>
             </div>
             <div class="user-box">
-                <input type="password" name="motpasse" required>
-                <label>Password</label>
+                <select name="fonction">
+                    <option value="directeur">Directeur</option>
+                    <option value="secretaire">Secrétaire</option>
+                </select>
             </div>
             <div>
                 <input type="submit" name="login" class="butt" value="Se connecter">
-                <?php
-                include('authenttraitement.php');
-                ?>
             </div>
-            
+            <?php
+            include('authenttraitement.php');
+            ?>
         </form>
     </div>
-    
 </body>
 </html>

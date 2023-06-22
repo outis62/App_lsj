@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../style/bootstrap/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="../style/styleinscription.css">
-    <link rel="shortcut icon" href="../image/logolsj.png">
-    <title>Inscription Admin LSJ</title>
+    <title>Secretaire Save</title>
 </head>
 <body>
-<style>
+    <style>
         body{
             background-color: #0DCAF0;
         }
@@ -88,8 +84,7 @@
   color: #fff;
   border: 0;
   border-radius: 24px;
-  /* padding: 10px 16px 10px; */
-  margin-left: 30px;
+  padding: 10px 16px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -102,33 +97,31 @@
 .spaceadmin
 {
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 75px;
 }
     </style>
     <div class="form-box">
     <form class="form" method="post">
-  <span class="title">Compte Directeur</span>
+  <span class="title">Compte secrétaire</span>
   <span class="subtitle">Créez un compte gratuit avec votre adresse e-mail.</span>
   <div class="form-container">
     <input type="text" class="input" name="nom" placeholder="Nom" required>
     <input type="text" class="input" name="prenom" placeholder="Prénom" required>
     <input type="email" class="input" name="email" placeholder="Email" required>
     <select class="input" name="fonction">
-      <option value="directeur">Directeur</option>
+      <option value="secretaire">Secrétaire</option>
     </select>
   </div>
   <button type="submit">Créer le compte</button>
 </form>
         <div class="form-section">
-          <p><a class="spaceadmin" href="authentification.php">Authentifier</a> </p>
+          <p><a class="spaceadmin" href="espacedirecteur.php">Mon space de travail</a> </p>
         </div>
         </div>
 </body>
 </html>
-
-
 <?php
-include('connexionbd.php');
+include('../connexionbd.php');
 
 class User {
     private $db;
@@ -170,6 +163,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-
-
-

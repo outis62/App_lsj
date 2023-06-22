@@ -88,8 +88,8 @@
   color: #fff;
   border: 0;
   border-radius: 24px;
-  /* padding: 10px 16px 10px; */
-  margin-left: 30px;
+  padding: 10px 16px; 
+  margin-left: 15px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -102,74 +102,24 @@
 .spaceadmin
 {
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 75px;
 }
     </style>
     <div class="form-box">
     <form class="form" method="post">
-  <span class="title">Compte Directeur</span>
+  <span class="title">Compte Parent</span>
   <span class="subtitle">Créez un compte gratuit avec votre adresse e-mail.</span>
   <div class="form-container">
     <input type="text" class="input" name="nom" placeholder="Nom" required>
     <input type="text" class="input" name="prenom" placeholder="Prénom" required>
+    <input type="email" class="input" name="telparent" placeholder="Telephone" required>
     <input type="email" class="input" name="email" placeholder="Email" required>
-    <select class="input" name="fonction">
-      <option value="directeur">Directeur</option>
-    </select>
   </div>
-  <button type="submit">Créer le compte</button>
+  <button type="submit">Créer compte parents</button>
 </form>
         <div class="form-section">
-          <p><a class="spaceadmin" href="authentification.php">Authentifier</a> </p>
+          <p><a class="spaceadmin" href="espacedirecteur.php">Mon space de travail</a> </p>
         </div>
         </div>
 </body>
 </html>
-
-
-<?php
-include('connexionbd.php');
-
-class User {
-    private $db;
-
-    public function __construct() {
-        $this->db = new Database();
-    }
-
-    public function enregistrement($nom, $prenom, $email, $fonction) {
-        $connection = $this->db->getConnection();
-        $query = "INSERT INTO administrateur (nom, prenom, email, fonction) VALUES (:nom, :prenom, :email, :fonction)";
-        $statement = $connection->prepare($query);
-        $statement->bindParam(':nom', $nom);
-        $statement->bindParam(':prenom', $prenom);
-        $statement->bindParam(':email', $email);
-        $statement->bindParam(':fonction', $fonction);
-
-        if ($statement->execute()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-}
-
-$user = new User();
-
-// Vérifier si le formulaire d'inscription a été soumis
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nom = $_POST['nom'];
-    $prenom = $_POST['prenom'];
-    $email = $_POST['email'];
-    $fonction = $_POST['fonction'];
-
-    if ($user->enregistrement($nom, $prenom, $email, $fonction)) {
-        echo "Inscription réussie";
-    } else {
-        echo "Erreur lors de l'inscription";
-    }
-}
-?>
-
-
-
