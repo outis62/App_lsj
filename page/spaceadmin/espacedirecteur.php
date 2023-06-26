@@ -15,7 +15,7 @@
 	display: flex;
 	margin: 20px;
 	padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 	margin-right: 50px;
 }
 .col1,.col2,.col3,.col4
@@ -54,7 +54,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
 } else {
     // L'utilisateur n'est pas connecté, vous pouvez afficher un message ou rediriger vers une page de connexion
     
-    echo '<a href="deconnexion.php" style="text-decoration:none; font-weight:300; padding:20px; background-color:blue; 
+    echo '<a href="deconnexion.php" style="text-decoration:none; font-weight:400; padding:20px; background-color:blue; 
     border-radius:20px; color:white; margin-top:30px;">Déconnexion</a>';
 }
 ?>
@@ -71,6 +71,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
  			<a href="#" class="col2"><img src="../../image/listparent.svg" width="70" height="70" id="img2" /><p>Consulter Liste Parent</p></a>
  		</div>
    </section>
-    <footer></footer>
+    <footer>
+        <p style="color:blue; text-align:center; font-weight:bold;">Copyright © 2023 Simplon.co/P04. Tous droits reserves. - Lycee Saint Jean</p>
+    </footer>
 </body>
 </html>

@@ -112,14 +112,64 @@
   <div class="form-container">
     <input type="text" class="input" name="nom" placeholder="Nom" required>
     <input type="text" class="input" name="prenom" placeholder="Prénom" required>
-    <input type="email" class="input" name="telparent" placeholder="Telephone" required>
     <input type="email" class="input" name="email" placeholder="Email" required>
+    <input type="number" class="input" name="telparent" placeholder="Telephone" required>
   </div>
-  <button type="submit">Créer compte parents</button>
+  <button type="submit">Créer compte parent</button>
 </form>
         <div class="form-section">
           <p><a class="spaceadmin" href="espacedirecteur.php">Mon space de travail</a> </p>
         </div>
+        <?php
+include('../connexionbd.php');
+
+class User {
+    private $db;
+
+    public function __construct() {
+        $this->db = new Database();
+    }
+
+    public function enregistrement($nom, $prenom, $email, $telparent) {
+        $connection = $this->db->getConnection();
+        $query = "INSERT INTO parent (nom, prenom, email, telparent) VALUES (:nom, :prenom, :email, :telparent)";
+        $statement = $connection->prepare($query);
+        $statement->bindParam(':nom', $nom);
+        $statement->bindParam(':prenom', $prenom);
+        $statement->bindParam(':email', $email);
+        $statement->bindParam(':telparent', $telparent);
+        
+
+        if ($statement->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+$user = new User();
+
+// Vérifier si le formulaire d'inscription a été soumis
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
+    $email = $_POST['email'];
+    $telparent = $_POST['telparent'];
+    
+
+    if ($user->enregistrement($nom, $prenom, $email, $telparent)) {
+        echo "Inscription réussie";
+    } else {
+        echo "Erreur lors de l'inscription";
+    }
+}
+?>
         </div>
 </body>
 </html>
+
+
+
+
+

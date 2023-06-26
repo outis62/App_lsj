@@ -75,6 +75,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
  			<a href="#" class="col2"><img src="../../image/listparent.svg" width="70" height="70" id="img2" /><p>Consulter Liste Parent</p></a>
  		</div>
 </section>
-    <footer></footer>
+<footer>
+    <p style="color:blue; text-align:center; font-weight:bold;">Copyright © 2023 Simplon.co/P04. Tous droits reserves. - Lycee Saint Jean</p>
+</footer>
 </body>
 </html>
