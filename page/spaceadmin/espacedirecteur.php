@@ -63,7 +63,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
     <div class="colgnrl">
  			<a href="savesecretaire.php" class="col1"><img src="../../image/secretaire.svg" width="70" height="70" id="img1" /><p>Creer compte secretaire</p></a>
  			<a href="ajoutparent.php" class="col2"><img src="../../image/parent.svg" width="70" height="70" id="img2" /><p>Creer un compte parent</p></a>
- 			<a href="#" class="col3"><img src="../../image/eleve.svg" width="70" height="70" id="img3" /><p>Ajouter un eleve</p></a>
+ 			<a href="inscription_eleve.php" class="col3"><img src="../../image/eleve.svg" width="70" height="70" id="img3" /><p>Ajouter un eleve</p></a>
  		</div>
          <div class="colgnrl">
             <a href="#" class="col4"><img src="../../image/moyenne.svg" width="70" height="70" id="img4" /><p>Ajouter une moyenne</p></a>
