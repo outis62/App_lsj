@@ -88,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Inscrire l'élève en l'associant au parent
     $eleve->inscrireEleve($nomEleve, $prenomEleve, $classeEleve, $genreEleve, $anneeInscription, $idParent);
 
-    echo 'L\'élève a été inscrit avec succès.';
+    // echo 'L\'élève a été inscrit avec succès.';
 }
 
 // Traitement de la requête AJAX pour les suggestions de parent
