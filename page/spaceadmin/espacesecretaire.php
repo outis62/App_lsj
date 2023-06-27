@@ -72,7 +72,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
  		</div>
          <div class="colgnrl2">
  			<a href="liste_eleve.php" class="col1"><img src="../../image/listeleve.svg" width="70" height="70" id="img1" /><p>Consulter Liste Eleve</p></a>
- 			<a href="#" class="col2"><img src="../../image/listparent.svg" width="70" height="70" id="img2" /><p>Consulter Liste Parent</p></a>
+ 			<a href="listeparent.php" class="col2"><img src="../../image/listparent.svg" width="70" height="70" id="img2" /><p>Consulter Liste Parent</p></a>
  		</div>
 </section>
 <footer>

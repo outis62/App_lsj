@@ -25,7 +25,7 @@
                 </select>
             </div>
             <div>
-                <input type="submit" name="login" class="butt" value="Se connecter">
+                <input type="submit" name="login" class="butt" value="Se Connecter">
             </div>
             <?php
             include('authenttraitement.php');

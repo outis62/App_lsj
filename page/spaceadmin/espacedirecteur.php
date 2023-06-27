@@ -68,7 +68,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
          <div class="colgnrl">
             <a href="#" class="col4"><img src="../../image/moyenne.svg" width="70" height="70" id="img4" /><p>Ajouter une moyenne</p></a>
  			<a href="liste_eleve.php" class="col1"><img src="../../image/listeleve.svg" width="70" height="70" id="img1" /><p>Consulter Liste Eleve</p></a>
- 			<a href="#" class="col2"><img src="../../image/listparent.svg" width="70" height="70" id="img2" /><p>Consulter Liste Parent</p></a>
+ 			<a href="listedesparent.php" class="col2"><img src="../../image/listparent.svg" width="70" height="70" id="img2" /><p>Consulter Liste Parent</p></a>
  		</div>
    </section>
     <footer>

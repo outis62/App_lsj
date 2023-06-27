@@ -113,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['searchTerm'])) {
 <body>
 <style>
     body{
-            background-color: #0DCAF0;
+        background-color: #0DCAF0;
         }
         .form-box {
   max-width: 300px;

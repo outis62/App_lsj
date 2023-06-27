@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
         }
     } else {
         // Échec de l'authentification
-        echo "Email ou fonction incorrecte";
+        echo "<p style='color:red; font-weight:bold; font-size:15px;'>Email ou fonction incorrecte</p>";
     }
 }
 
