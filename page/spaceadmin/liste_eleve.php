@@ -49,10 +49,10 @@ img{
 
 
     <div class="colgnrl mt-5">
- 			<a href="#" class="col1"><img src="../../image/liste6eme.svg" width="70" height="70" id="img1" /><p>Liste 6ème</p></a>
- 			<a href="#" class="col2"><img src="../../image/liste5eme.svg" width="70" height="70" id="img2" /><p>Liste 5ème</p></a>
- 			<a href="#" class="col3"><img src="../../image/liste4eme.svg" width="70" height="70" id="img3" /><p>Liste 4ème</p></a>
-             <a href="#" class="col3"><img src="../../image/liste3eme.svg" width="70" height="70" id="img3" /><p>Liste 3ème</p></a>
+ 			<a href="liste6eme.php" class="col1"><img src="../../image/liste6eme.svg" width="70" height="70" id="img1" /><p>Liste 6ème</p></a>
+ 			<a href="liste5eme.php" class="col2"><img src="../../image/liste5eme.svg" width="70" height="70" id="img2" /><p>Liste 5ème</p></a>
+ 			<a href="liste4eme.php" class="col3"><img src="../../image/liste4eme.svg" width="70" height="70" id="img3" /><p>Liste 4ème</p></a>
+             <a href="liste3eme.php" class="col3"><img src="../../image/liste3eme.svg" width="70" height="70" id="img3" /><p>Liste 3ème</p></a>
  		</div>
 <footer>
 
